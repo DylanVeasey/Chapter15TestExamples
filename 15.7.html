@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        test = new User("Dylan", "Veasey", "Password123");
+        test.showUser();
+
+        function User(forename, username, password)
+        {
+        this.forename = forename
+        this.username = username
+        this.password = password
+        User.prototype.showUser = function()
+        {
+        document.write("Forename: " + this.forename + "<br>")
+        document.write("Username: " + this.username + "<br>")
+        document.write("Password: " + this.password + "<br>")
+        }
+        }
+       </script>
+</body>
+</html>
